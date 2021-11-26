@@ -1,0 +1,177 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    font-style: bold;	
+}
+
+nav{
+	float: right;
+}
+main{
+	background-color: #C1C7C2;
+	widows: 90%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.cuadro_img{
+    margin-bottom: 30px;
+    transition: transform .2s; /* Animation */
+}
+
+.cuadro_img:hover {
+    transform: scale(0.9);
+}
+
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #75C7C6;
+    text-align: center;
+
+}
+
+footer img{
+    margin:13px;
+    transition: transform .2s; /* Animation */
+}
+
+footer img:hover{
+    transform: scale(0.9);
+}
+
+@media screen and (min-width: 900px) and (max-width: 2000px){
+	header{
+    width: 100%;
+    height: 80px;
+    background-color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    font-style: bold;	
+}
+
+	body{
+		width: 90%;
+		
+	}
+	/*menu*/
+	header label{
+		display: none;
+	}
+	
+	#menu-bar{
+		display:none;
+	}	
+
+	nav{
+		width: 68%;
+	}
+	
+	.menu a{
+		font-family: "Source Sans Pro SemiBold";
+		width: 20%;
+		padding: 10px;
+		font-size: 1.4vw;
+		color: #255B71;
+		line-height: 80px;
+		border-radius: 10px;
+		margin: 10px
+	}
+
+	.menu a:hover{
+		background-color: #255B71;
+		border-radius: 10px;
+		font-family: "Source Sans Pro Light";
+		color: #ECEBE5;
+		transition: all 0.3s;
+	}
+	  .flex-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .cuadro_img{
+        margin: 10px;
+    }
+
+
+}
+
+
+/*menu pequeño*/
+@media screen and (min-width: 20px) and (max-width: 900px){
+.contenedor_menu{
+	width: 100%;
+	height: 100%;	
+}
+#menu-bar{
+	display: none;
+
+}
+
+header label{
+	float: right;
+	margin: 20px 20px;
+	cursor: pointer;
+	justify-content: space-between;
+}
+.menu{
+	position: absolute;
+	top: 80px;
+	lighting-color: 0;
+	width: 100%;
+	height: auto;
+	background: #75C7C6;
+	transition: all 0.5s;
+	transform: translateY(-150%);
+
+}
+
+.menu a{
+	display: block;
+	color: white;
+	height: 50px;
+	text-decoration: none;
+	padding: 10px;
+	border-bottom: 2px solid;
+    text-align: center;
+    font-size: 16pt;
+	font-family: "Source Sans Pro SemiBold";
+}
+
+.menu a:hover{
+	background: #255B71;
+	font-family: "Source Sans Pro Light";
+    color: #FDCD68;
+}
+
+#menu-bar:checked ~ .menu{
+	transform: translateY(0%);
+}
+	
+
+}

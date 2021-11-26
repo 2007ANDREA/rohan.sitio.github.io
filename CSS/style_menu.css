@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    font-style: bold;
+
+}
+
+nav{
+	float: right;
+}
+main{
+	background-color: #ECEBE5;
+	widows: 90%;
+}
+.banner .elemen1 a {
+ display: block;
+    width: 80px;
+    color: #EFEFEF;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 18px;
+    border: 2px solid #EFEFEF;
+    text-align: center;
+    font-family: "Source Sans Pro SemiBold";
+    font-style: italic;
+    font-size: 12px;
+}
+.banner .elemen1 a:hover{
+	background: rgba(102, 204, 204);
+}
+
+.subtitulos{
+    color: #255B71;
+    padding: 50px 0px 10px 0px;
+    font-family: "Source Sans Pro Black";
+    text-align: center;
+}
+
+
+
+.proyectos{
+	width: 90%;
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: center;
+}
+.caja{
+    width: 235px;
+    height: 360px;
+    background-color: #C1C7C2;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    font-size: 15px;
+	margin: 20px;
+	
+}
+
+.tex1{
+	padding: 15px;
+	font-size: 22px;
+	color: #255B71;
+	font-family:"Source Sans Pro Black";
+}
+
+.tex2{
+	padding-left: 18px ;
+	padding-right: 18px;
+}
+
+.proyectos .caja a {
+	display: block;
+    width: 80px;
+    color: #EFEFEF;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 18px;
+    background-color: #255B71;
+    text-align: center;
+    font-family: "Source Sans Pro SemiBold";
+    font-style: italic;
+    font-size: 12px;
+	 }
+.proyectos .caja a:hover {
+	background: rgba(102, 204, 204);
+	color: #255B71;
+}
+footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #75C7C6;
+    text-align: center;
+}
+
+footer img{
+    margin:13px;
+    transition: transform .2s; /* Animation */
+}
+
+footer img:hover{
+    transform: scale(0.9);
+}
+
+@media screen and (min-width: 800px) and (max-width: 2000px){
+	header{
+    width: 100%;
+    height: 80px;
+    background-color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    font-style: bold;	
+}
+
+	body{
+		width: 90%;
+		
+	}
+	/*menu*/
+	header label{
+		display: none;
+	}
+	
+	#menu-bar{
+		display:none;
+	}	
+
+	nav{
+		width: 63%;
+	}
+	
+	.menu a{
+		font-family: "Source Sans Pro SemiBold";
+		width: 20%;
+		padding: 10px;
+		font-size: 1.4vw;
+		color: #255B71;
+		line-height: 80px;
+		border-radius: 10px;
+		margin: 10px
+	}
+
+	.menu a:hover{
+		background-color: #255B71;
+		border-radius: 10px;
+		font-family: "Source Sans Pro Light";
+		color: #ECEBE5;
+		transition: all 0.3s;
+	}
+	
+	.banner{
+    width: 100%;
+	padding: 19px 50px 0px 40px;
+    background-image: url("../Imagenes/fondo flor-8.png");
+    color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    display: flex;
+    flex-wrap: no-wrap;
+    text-align: center;
+    
+}
+p{
+	padding: 5px 40px 0px 40px;
+}
+	.elemen1{
+		padding: 47px 0px 0px 0px;
+	}
+
+	.carousel{
+    width: 90%;
+    height: 500px;
+	}
+
+}
+
+
+/*menu pequeño*/
+@media screen and (min-width: 20px) and (max-width: 800px){
+.contenedor_menu{
+	width: 100%;
+	height: 100%;	
+}
+#menu-bar{
+	display: none;
+
+}
+
+header label{
+	float: right;
+	margin: 20px 20px;
+	cursor: pointer;
+	justify-content: space-between;
+}
+.menu{
+	position: absolute;
+	top: 80px;
+	lighting-color: 0;
+	width: 100%;
+	height: auto;
+	background: #75C7C6;
+	transition: all 0.5s;
+	transform: translateY(-150%);
+
+}
+
+.menu a{
+	display: block;
+	color: white;
+	height: 50px;
+	text-decoration: none;
+	padding: 10px;
+	border-bottom: 2px solid;
+    text-align: center;
+    font-size: 16pt;
+	font-family: "Source Sans Pro SemiBold";
+}
+
+.menu a:hover{
+	background: #255B71;
+	font-family: "Source Sans Pro Light";
+    color: #FDCD68;
+}
+
+#menu-bar:checked ~ .menu{
+	transform: translateY(0%);
+}
+	
+.banner{
+    width: 100%;
+	padding: 19px 10px 0px 10px;
+    background-image: url("../Imagenes/fondo flor-8.png");
+    color: #ECEBE5;
+    font-family: "Source Sans Pro";
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.banner .elemen img {
+	width: 270px;
+}
+		.carousel{
+	  
+		width: 90%;
+		height: 480px;
+	}
+.proyectos{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+}	
+
+
+
+}

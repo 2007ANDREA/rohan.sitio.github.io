@@ -1,0 +1,25 @@
+@charset "utf-8";
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.cuadro_img{
+    margin-bottom: 20px;
+    transition: transform .2s; /* Animation */
+    width: 235px;
+    height: 360px;
+}
+
+.cuadro_img:hover {
+    transform: scale(0.9);
+}
